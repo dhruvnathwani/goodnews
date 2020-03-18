@@ -40,6 +40,10 @@ $(document).ready(function(){
                         12:'December'
                     }
 
+                    var site = new URL(data.Links[i])
+
+                    console.log(site.hostname)
+
                     var date_sub = lookup[month] + ' ' + day
 
                     $('#loading').fadeOut();
@@ -47,7 +51,7 @@ $(document).ready(function(){
                     // Append a child to info row
                     $("#info").append(
 
-                        "<div class='col py-2'><div class='card m-4 p-2 h-100' style='width: 18rem'><div class='card-body d-flex flex-column'><p class='card-text'>" + 
+                        "<div class='col py-2'><div class='card m-4 p-2 h-100' style='width: 18rem'><img src=https://logo.clearbit.com/"+site.hostname+" class='card-img-top' onerror=this.src='https://image.flaticon.com/icons/png/512/69/69945.png'><div class='card-body d-flex flex-column'><p class='card-text'>" + 
                         data.Titles[i] + "</p><h6 class='card-subtitle mb-2 text-muted'>" + 
                         date_sub + "</h6><a class='btn btn-success mt-auto' href='" + data.Links[i] + "'>Article Link</a></div></div></div>"
 
