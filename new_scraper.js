@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-        $.get('https://aqueous-cove-10743.herokuapp.com/info', function(data){
+        $.get('https://cors-anywhere.herokuapp.com/https://aqueous-cove-10743.herokuapp.com/info', function(data){
         
             console.log(data)
 
