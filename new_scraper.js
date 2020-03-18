@@ -51,7 +51,7 @@ $(document).ready(function(){
                     // Append a child to info row
                     $("#info").append(
 
-                        "<div class='col py-2'><div class='card m-4 p-2 h-100' style='width: 18rem'><img src=https://logo.clearbit.com/"+site.hostname+" class='card-img-top' onerror=this.src='https://image.flaticon.com/icons/png/512/69/69945.png'><div class='card-body d-flex flex-column'><p class='card-text'>" + 
+                        "<div class='col py-2'><div class='card m-4 p-2 h-100' style='width: 18rem'><img src=https://logo.clearbit.com/"+site.hostname+" class='card-img-top' onerror=this.src='https://i.dlpng.com/static/png/1740452-image-newspaper-iconpng-club-penguin-wiki-fandom-powered-by-newspaper-png-images-512_512_preview.png'><div class='card-body d-flex flex-column'><p class='card-text'>" + 
                         data.Titles[i] + "</p><h6 class='card-subtitle mb-2 text-muted'>" + 
                         date_sub + "</h6><a class='btn btn-success mt-auto' href='" + data.Links[i] + "'>Article Link</a></div></div></div>"
 
